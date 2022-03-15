@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Flash Food</title>
+	<meta name="description" content="Flash Food helps people find takeaways that suit their preferences.">
+	<meta name="keywords" content="Food, Takeaway">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>  
+	
+<body>
+	<nav class="navbar navbar-expand-md">
+		<a class="navbar-brand" href="index.html">FLASH FOOD</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="main-navigation">
+			<ul class="navbar-nav ">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="search.html">Search</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="register.html">Register</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="contactUs.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <div class="container register">
+		<h1>Register with Flash Food</h1>
+		<hr class="solid">
+        <p>Registering with Flash Food will make ordering with us lightning fast.
+			<br><br>
+			As well as allow you to make use of exclusive Flash Food discounts on takeaways and keep track of your favourite takeaway places and orders so that you can place your favourite takeaway order with the single click of a button!
+			<br><br>
+			These Flash Food member benefits are entirely free. So what are you waiting for? Register now!
+		</p>
+		<hr class="solid">
+
+		<form action="registerConfirmed.html">
+			<div class="form-row" style="margin-top: 20px;">
+				<div class="col-md-2 align-self-center">
+      				<label for="inputFullName">Full Name*</label>
+				</div>
+
+				<div class="col-md-10">
+      				<input type="text" class="form-control" id="inputFullName" placeholder="Full Name" style="width: 100%;">
+    			</div>
+			</div>
+
+  			<div class="form-row" style="margin-top: 20px;">
+				<div class="col-md-2 align-self-center">
+      				<label for="inputEmail">Email*</label>
+				</div>
+
+				<div class="col-md-10 ">
+      				<input type="email" class="form-control" id="inputEmail" placeholder="Email" style="width: 100%;">
+    			</div>
+			</div>
+			<hr class="solid">
+
+			<div class="row">
+    			<div class="form-row col-md-6" style="margin-top: 20px;">
+					<div class="col-md-3 align-self-center">
+      					<label for="inputPassword">Password*</label>
+					</div>
+
+					<div class="col-md-9">
+      					<input type="password" class="form-control" id="inputPassword" placeholder="Password" style="width: 100%">
+    				</div>
+				</div>
+				<hr class="solid">
+
+				<div class="form-row col-md-6" style="margin-top: 20px;">
+      				<input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password" style="width: 100%">
+				</div>
+			</div>
+			<hr class="solid">
+
+			<div class="form-row"  style="margin-top: 20px;">
+				<div class="col-md-2 align-self-center">
+					<label for="inputCountry">Country*</label>
+				</div>
+
+				<div class="col-md-10">
+					<select id="inputCountry" class="form-control" style="width: 40%; margin-left: 0;">
+					  	<option selected>Choose...</option>
+					  	<option>United Kingdom</option>
+					  	<option>United States of America</option>
+					  	<option>Canada</option>
+					  	<option>Australia</option>
+					</select>
+				</div>
+	  		</div>
+
+			<div class="form-row" style="margin-top: 20px;">
+				<div class="col-md-2 align-self-center">
+      				<label for="inputAddress1">Address Line 1*</label>
+				</div>
+
+				<div class="col-md-10">
+      				<input type="text" class="form-control" id="inputAddress1" placeholder="Address Line 1" style="width: 100%">
+    			</div>
+			</div>
+
+			<div class="form-row" style="margin-top: 20px;">
+				<div class="col-md-2 align-self-center">
+      				<label for="inputAddress2">Address Line 2</label>
+				</div>
+
+				<div class="col-md-10">
+      				<input type="text" class="form-control" id="inputAddress2" placeholder="Address Line 2 (Optional)" style="width: 100%">
+    			</div>
+			</div>
+			
+			<div class="form-row" style="margin-top: 20px;">
+				<div class="form-group col-md-6" style="margin:0px">
+      				<label for="inputTownCity">Town / City*</label>
+					  
+					<input type="text" class="form-control" id="inputTownCity" placeholder="Town / City" style="width: 100%; margin-top: 20px;">
+				</div>
+				
+				<div class="form-group col-md-4" style="margin:0px">
+      				<label for="inputCounty">County</label>
+				
+      				<select id="inputCounty" class="form-control" style="width: 100%; margin-left: 0; margin-top: 20px;">
+        				<option selected>N/A...</option>
+        				<option>Tyrone</option>
+        				<option>Derry</option>
+        				<option>Antrim</option>
+        				<option>Donegal</option>
+        				<option>Fermanagh</option>
+        				<option>Armagh</option>
+      				</select>
+				</div>
+				
+				<div class="form-group col-md-2" style="margin:0px">
+      				<label for="inputPostZipCode">Postal / Zip Code*</label>
+
+      				<input type="text" class="form-control" id="inputPostZipCode" placeholder="Postal / Zip Code" style="width: 100%; margin-top: 20px;">
+    			</div>
+			</div>
+		  	<hr class="solid">
+
+    		<div class="form-check">
+      			<input class="form-check-input" type="checkbox" id="gridCheck">
+
+      			<label class="form-check-label " for="gridCheck">I have read the <a href="https://www.google.com/search?client=opera-gx&q=terms+and+conditions&sourceid=opera&ie=UTF-8&oe=UTF-8" style="color:maroon"><b>terms and conditions</b></a>.*</label>
+    		</div>
+			<hr class="solid">
+  			<button type="submit" class="btn btn-lg" style="margin-bottom: 20px; margin-left : 45%;">Register</button>  
+		</form>
+	</div>
+
+	<div class="footer">
+		<ul style="padding-left: 0px; margin-left: 0px; list-style-type: none; text-align: center;">
+			<li style="display: inline; padding-left: 10px;"><a href="https://en-gb.facebook.com/"><i class="fab fa-facebook-square" style="font-size: 40px;"></i></a></li>
+			<li style="display: inline; padding-left: 10px;"><a href="https://twitter.com/"><i class="fab fa-twitter-square" style="font-size: 40px;"></i></a></li>
+			<li style="display: inline; padding-left: 10px;"><a href="https://www.instagram.com/"><i class="fab fa-instagram-square" style="font-size: 40px;"></i></a></li>
+			<li style="display: inline; padding-left: 10px;"><a href="https://www.youtube.com/"><i class="fab fa-youtube-square" style="font-size: 40px;"></i></a></li>
+		</ul>
+		<p>© 2021 Flash Food. All Rights Reserved</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/jQuery/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+	<script stc="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/fee43bb7d6.js"></script>
+</body>
+</html>
